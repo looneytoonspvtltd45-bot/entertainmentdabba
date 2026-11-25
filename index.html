@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b14">
+<meta name="description" content="Entertainment Dabba — comedy, viral videos, music, movies and trends.">
+<title>Entertainment Dabba — Your Daily Dose of Fun</title>
+<style>
+:root{--bg:#0b0b14;--panel:#171725;--line:#2c2c40;--muted:#aaaabd;--pink:#ff3d91;--orange:#ff9b45}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;font-family:Inter,system-ui,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#0b0b14eF;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:1.28rem;font-weight:950;letter-spacing:-.8px}.logo b{color:var(--pink)}nav{display:flex;gap:26px;color:#d6d3e5;font-size:.92rem}nav a:hover{color:var(--pink)}.menu{display:none;background:#202033;color:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:10px}
+.hero{position:relative;overflow:hidden;padding:76px 0 66px;background:radial-gradient(ellipse at 80% 20%,#76264f66,transparent 42%),radial-gradient(ellipse at 10% 90%,#4330a944,transparent 42%)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:38px}.tag{display:inline-block;border:1px solid #713451;border-radius:30px;padding:8px 13px;color:#ffacd0;font-size:.76rem;font-weight:900;letter-spacing:1px}
+h1{font-size:clamp(3rem,7vw,5.7rem);line-height:.96;letter-spacing:-4px;margin:22px 0}.gradient{background:linear-gradient(90deg,#ff4c9c,#ffb34d);color:transparent;background-clip:text}.lead{max-width:580px;color:var(--muted);font-size:1.08rem;line-height:1.75}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:14px 20px;border-radius:13px;font-weight:850;background:linear-gradient(100deg,var(--pink),#ff784c);box-shadow:0 9px 28px #ff3d9135}.btn.alt{background:#202033;border:1px solid #3b3b51;box-shadow:none}
+.art{height:340px;border:1px solid #ffffff24;border-radius:30px;display:grid;place-items:center;position:relative;overflow:hidden;background:linear-gradient(140deg,#55264f,#242044 58%,#172d43);box-shadow:0 25px 80px #0005}.disc{width:220px;height:220px;border-radius:50%;background:conic-gradient(#ff3d91,#ffb34d,#755cff,#24c5cb,#ff3d91);display:grid;place-items:center;box-shadow:0 22px 70px #0008;animation:spin 22s linear infinite}.disc:after{content:"";width:70px;height:70px;border-radius:50%;background:#171725;border:10px solid #ffffff38}.float{position:absolute;background:#171725eF;border:1px solid #ffffff30;border-radius:12px;padding:11px 14px;font-weight:900;box-shadow:0 8px 28px #0004}.f1{top:25px;left:20px}.f2{right:18px;top:105px}.f3{bottom:25px;left:30px}@keyframes spin{to{transform:rotate(360deg)}}
+.ticker{border-block:1px solid var(--line);background:#12121e}.ticker-in{display:flex;justify-content:space-between;gap:18px;overflow:auto;padding:15px 0;color:#d69ab8;font-size:.73rem;font-weight:950;letter-spacing:1.2px;white-space:nowrap}
+section.content{padding:60px 0}.eyebrow{color:var(--pink);font-weight:950;text-transform:uppercase;letter-spacing:1.5px;font-size:.74rem}h2{font-size:clamp(1.8rem,4vw,2.4rem);letter-spacing:-1.2px;margin:8px 0}.sub{color:var(--muted);margin:8px 0 28px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:19px;transition:.22s;box-shadow:0 12px 32px #0002}.card:hover{transform:translateY(-5px);border-color:#874365}.thumb{height:160px;display:grid;place-items:center;font-size:3.5rem;background:linear-gradient(135deg,#45214d,#242c50)}.thumb.o{background:linear-gradient(135deg,#63351f,#4a2846)}.thumb.b{background:linear-gradient(135deg,#163f58,#322452)}.body{padding:18px}.pill{color:#ff9fc5;font-size:.7rem;font-weight:900;letter-spacing:1px;text-transform:uppercase}.body h3{margin:8px 0}.body p{margin:0;color:var(--muted);line-height:1.6;font-size:.92rem}
+.feature{padding:30px;border:1px solid #49304b;border-radius:23px;background:linear-gradient(110deg,#28172f,#191a30);display:flex;align-items:center;justify-content:space-between;gap:20px}.feature strong{font-size:1.45rem}.feature p{color:var(--muted);line-height:1.6;margin-bottom:0}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){.hero{padding:54px 0}.hero-grid{grid-template-columns:1fr}.art{height:270px}.grid{grid-template-columns:1fr}.menu{display:block}nav{display:none;position:absolute;top:72px;left:0;right:0;background:#141421;padding:20px 4%;flex-direction:column;border-bottom:1px solid var(--line)}nav.open{display:flex}h1{letter-spacing:-2px}.feature{align-items:flex-start;flex-direction:column}.ticker-in{justify-content:flex-start}}
+
+.video-grid{align-items:start}.video-frame{aspect-ratio:16/9;background:#090912;display:grid;place-items:center;overflow:hidden}
+.video-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;text-align:center;padding:16px;background:radial-gradient(circle at 50% 40%,#532342,#171725 70%)}
+.video-placeholder.short{background:radial-gradient(circle at 50% 40%,#283c65,#171725 70%)}
+.video-placeholder span{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(120deg,var(--pink),var(--orange));font-size:1.2rem;box-shadow:0 8px 28px #ff3d9140}
+.video-placeholder b{font-size:1rem}.video-placeholder small{color:#c1bdd0;font-size:.8rem}.video-tip{color:var(--muted);font-size:.88rem;margin-top:18px}
+
+.channel-feature{background:linear-gradient(110deg,#35182c,#1b1b32);border-color:#66314e}
+</style></head><body>
+<header><div class="wrap nav"><a class="logo" href="#">ED <b>Entertainment Dabba</b> ✦</a><nav id="nav"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#videos">Videos</a><a href="#youtube-channel">YouTube</a><a href="#spotlight">Spotlight</a><a href="#about">About</a></nav><button class="menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid"><div><span class="tag">✦ YOUR DAILY DOSE OF FUN</span><h1>Welcome to the<br><span class="gradient">fun side.</span></h1><p class="lead">Your all-in-one destination for comedy, viral videos, music, movies and trending entertainment. Open the Dabba and let the good vibes roll!</p><div class="actions"><a class="btn" href="#spotlight">▶ Explore videos</a><a class="btn alt" href="https://www.youtube.com/@Looneytoons-78" target="_blank" rel="noopener">▶ Visit my YouTube</a></div></div><div class="art"><div class="disc"></div><span class="float f1">😂 NON-STOP FUN</span><span class="float f2">▶ HIT PLAY</span><span class="float f3">♪ TRENDING NOW</span></div></div></section>
+<div class="ticker"><div class="wrap ticker-in"><span>✦ COMEDY</span><span>✦ VIRAL VIDEOS</span><span>✦ MUSIC</span><span>✦ MOVIES</span><span>✦ GOOD VIBES ONLY</span></div></div>
+<section class="content" id="categories"><div class="wrap"><div class="eyebrow">Explore the collection</div><h2>Find your kind of fun</h2><p class="sub">Fresh entertainment, all in one place.</p><div class="grid">
+<article class="card"><div class="thumb">😂</div><div class="body"><span class="pill">Laugh out loud</span><h3>Comedy & Memes</h3><p>Funny moments, jokes and memes to brighten your day.</p></div></article>
+<article class="card"><div class="thumb o">🎬</div><div class="body"><span class="pill">Watch something</span><h3>Videos & Shorts</h3><p>Entertaining clips, creative videos and bite-sized fun.</p></div></article>
+<article class="card"><div class="thumb b">🎵</div><div class="body"><span class="pill">Feel the beat</span><h3>Music & Trends</h3><p>Popular sounds, music moments and viral trends.</p></div></article>
+<article class="card"><div class="thumb b">🍿</div><div class="body"><span class="pill">Movie time</span><h3>Movies & Shows</h3><p>Entertainment news, reviews and what to watch next.</p></div></article>
+<article class="card"><div class="thumb o">🎮</div><div class="body"><span class="pill">Game on</span><h3>Gaming Zone</h3><p>Gaming clips, highlights and fun challenges.</p></div></article>
+<article class="card"><div class="thumb">🌟</div><div class="body"><span class="pill">Fresh updates</span><h3>Trending Now</h3><p>Interesting stories and topics people are talking about.</p></div></article>
+</div></div></section>
+
+<section class="content" id="videos">
+  <div class="wrap">
+    <div class="eyebrow">Watch & enjoy</div>
+    <h2>Fresh from the Dabba</h2>
+    <p class="sub">Your video zone for full videos and quick laughs.</p>
+    <div class="grid video-grid">
+      <article class="card video-card">
+        <div class="video-frame"><div class="video-placeholder"><span>▶</span><b>Your featured video</b><small>Add your YouTube video link to show it here.</small></div></div>
+        <div class="body"><span class="pill">Featured video</span><h3>Latest entertainment</h3><p>Replace this sample slot with your own YouTube video.</p></div>
+      </article>
+      <article class="card video-card">
+        <div class="video-frame"><div class="video-placeholder short"><span>▶</span><b>Your Short #1</b><small>Paste a YouTube Shorts link.</small></div></div>
+        <div class="body"><span class="pill">Shorts</span><h3>Quick laughs</h3><p>A space for your funniest short videos.</p></div>
+      </article>
+      <article class="card video-card">
+        <div class="video-frame"><div class="video-placeholder short"><span>▶</span><b>Your Short #2</b><small>Paste a YouTube Shorts link.</small></div></div>
+        <div class="body"><span class="pill">Shorts</span><h3>Trending clips</h3><p>Keep visitors watching your latest clips.</p></div>
+      </article>
+    </div>
+    <p class="video-tip">To add videos, send me the YouTube video or Shorts links and I can put them into these spaces.</p>
+  </div>
+</section>
+
+
+<section class="content" id="youtube-channel">
+  <div class="wrap">
+    <div class="feature channel-feature">
+      <div><div class="eyebrow">Our YouTube channel</div>
+      <strong>More videos. More laughs.</strong>
+      <p>Watch the latest uploads and Shorts from Looneytoons-78 on YouTube.</p></div>
+      <a class="btn" href="https://www.youtube.com/@Looneytoons-78" target="_blank" rel="noopener">Visit @Looneytoons-78 ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="content" id="spotlight"><div class="wrap"><div class="feature"><div><div class="eyebrow">Coming up next</div><strong>Your next favourite video goes here.</strong><p>Add your own YouTube videos, comedy reels, articles and social links to make this space yours.</p></div><a class="btn" href="#about">Know more →</a></div></div></section>
+<section class="content" id="about"><div class="wrap"><div class="eyebrow">A little about us</div><h2>One dabba. Endless entertainment.</h2><p class="lead">Entertainment Dabba is your home for fun and feel-good content. We’re here to share laughs, discover trends and make every scroll a little more entertaining.</p></div></section>
+</main><footer><div class="wrap foot"><span>© <span id="year"></span> Entertainment Dabba. All rights reserved.</span><span>Made with ♥ for entertainment lovers</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script></body></html>
